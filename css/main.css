@@ -1,0 +1,439 @@
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+/* ========================== Grid Styling ========================== */
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+
+/* ========================== Font Styling ========================== */
+p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    padding-right: 10px;
+}
+
+a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: 'Caveat', cursive;
+    margin: 10px 0px;
+    font-size: 2.8em;
+}
+
+
+/* ========================== Header Styling ========================== */
+/* top nav */
+.logo-img {
+    background: url("../img/christine-moore-logo.png");
+    background-repeat: no-repeat;
+    background-size: 70px 80px;
+    height: 70px;
+    width: 80px;
+    padding-bottom: 20px;
+}
+
+nav ul { 
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 40px -60px 40px;
+}
+
+nav ul li a {
+    padding-top: 50px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* sticky nav styling */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 0px 1px 10px #999;
+    padding-bottom: 10px;
+  }
+  
+
+ /* .sticky + #hero {
+    padding-top: 100px;
+  } */
+
+/* background color */
+
+
+#hero {
+    background-color: #F7EFEB;
+    /* background-size: 50%; */
+    width: 50%;
+    height: 470px;
+    padding-left: 140px;
+    margin-top: 60px; 
+}
+
+/* main image & quote */
+.half-width img {
+    margin: 20px 0px 0px 50px;
+    width: 600px;
+    height: 400px;
+    /*position: relative;*/
+}
+
+hr {
+    border: 0.5px solid black;
+    width: 100px;
+    margin: 110px 0px 0px -10px;
+    position: absolute;
+}
+
+h1 {
+    padding: 20px 0px 0px 120px;
+}
+
+/*
+.half-width h2 {
+    writing-mode: tb-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 1;
+    margin: 5% 0% 0% 1%;
+} */
+
+
+/* ==================================== Main Styling ==================================== */
+/* ============== About Section ============== */
+#about {
+    margin-top: 90px;
+}
+
+.button {
+	border: 2px solid #ffffff;
+	background-color: #C13308;
+    color: #ffffff;
+    clear: both;
+    display: block;
+	font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    width: 280px;
+    margin: 0 auto; 
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+#about .button{
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #A82709;
+    letter-spacing: 1.5px;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    /* transform: scale(1.03); */
+}
+
+.vertical-line {
+    width: 1px;
+    height: 50px;
+    background: black;
+    margin: 30px 0px 20px 600px;
+}
+
+.quote {
+    padding-top: 50px;
+    text-align: center;
+    clear: both;
+}
+
+/* ============== Mission Section ============== */
+.mission-bg {
+    float: right;
+    background-color: #F7EFEB;
+    width: 45%;
+    height: 650px;
+    margin-top: -600px;
+    margin-left: 55%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#mission .full-width {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#mission h3 {
+    text-align: center;
+}
+
+.item-mission {
+    float: left;
+    margin: 0 auto;
+}
+
+.item-mission img {
+    padding: 0px 8px;
+    width: 284px;
+
+}
+
+.item-vl {
+    width: 1px;
+    height: 50px;
+    background: black;
+    margin: -20px 0px 20px 40px;
+    position: absolute;
+
+}
+
+.item-mission p {
+    padding: 25px 0px 70px 0px;
+    font-weight: 800;
+}
+
+/* ============== Portfolio Section ============== */
+#portfolio .full-width {
+    clear: both;
+    margin-top: 150px;
+}
+
+/*
+.portfolio-bg {
+    background-color: #F7EFEB;
+    width: 50%;
+    height: 1000px;
+    padding-left: 140px;
+    margin-top: -100px; 
+} */
+
+.item-portfolio {
+    float: left;
+    margin: 0 auto;
+    padding-left: 0px;
+    font-weight: 700;
+}
+
+.item-portfolio figure img {
+    margin: -50px 20px 50px 0px;
+    width: 550px;
+    height: 320px;
+    padding-top: 50px;
+    /*-webkit-filter: grayscale(100%); */
+    /*filter: grayscale(100%);*/
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 13px 13px 0px 3px rgba(247,239,235,1);
+    -moz-box-shadow: 13px 13px 0px 3px rgba(247,239,235,1);
+    box-shadow: 13px 13px 0px 3px rgba(247,239,235,1);
+}
+
+.item-portfolio figure:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+    }
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+/* ==================================== Footer Styling ==================================== */
+#contact .full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 280px;
+}
+
+#contact .half-width{
+    float: left;
+}
+
+
+.contact-bg {
+    background-color: #F7EFEB;
+    /* background-size: 50%; */
+    width: 50%;
+    height: 600px;
+    margin-top: -50px;
+    margin-left: 50%;
+    z-index: -1;
+    position: absolute;
+}
+
+
+/* ============== Contact Section Left ============== */
+.contact-left {
+    padding-left: 40px;
+}
+
+.contact-left hr {
+    margin-left: 470px;;
+}
+
+.contact-left h1 {
+    padding-left: 0px;
+    line-height: 1em;
+}
+
+.contact-right {
+    padding-left: 40px;
+    font-weight: 700;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 0.7em;
+    position: absolute;
+}
+
+.contact-left ul {
+    margin-left: -40px;
+}
+
+.contact-left ul li {
+   list-style-type: none;
+   display: inline-block;
+   padding-right: 40px;
+}
+
+/* ============== Contact Section Right ============== */
+/* ============== Contact Form ============== */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+  
+ button[type=submit] {
+    background-color: #C13308;;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #A82709;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
