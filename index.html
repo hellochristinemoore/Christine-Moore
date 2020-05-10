@@ -14,15 +14,15 @@
     <body>
         <header>
             <nav>
-                <section id="navbar">
-                    <div class="full-width">
-                            <ul>
-                                <li class="items"><a href="#hero">Home</a></li>
-                                <li class="items"><a href="#about">About</a></li>
-                                <li class="logo-img"><a href="#hero"></a></li>
-                                <li class="items"><a href="#portfolio">My work</a></li>
-                                <li class="items"><a href="#contact">Contact</a></li>
-                            </ul>
+                <div class="full-width">
+                    <div id="navbar">
+                        <ul>
+                            <li class="items"><a href="#hero">Home</a></li>
+                            <li class="items"><a href="#about">About</a></li>
+                            <li class="logo-img"><a href="#hero"></a></li>
+                            <li class="items"><a href="#portfolio">My work</a></li>
+                            <li class="items"><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -61,9 +61,7 @@
                         <p>- Brené Brown</p>
                     </div>
                     <div class="vertical-line"></div> 
-                    <div class="cta-button">
-                        <a type="button" href="https://www.linkedin.com/in/christine-moore-433b7212a/" value="linkedin" target="_blank" class="button">Let's connect on LinkedIn</a>
-                    </div>
+                        <button onclick="window.location.href = 'https://www.linkedin.com/in/christine-moore-433b7212a/;'">Let's connect on LinkedIn</button>
                 </div>
             </section>
 
@@ -71,7 +69,6 @@
             <section id="mission">
                 <div class="full-width">
                     <h3>My mission</h3>
-                    <div class="third-width">
                         <div class="item-mission">
                             <img src="img/design.png" alt="Creative design">
                             <div class="item-vl"></div> 
@@ -93,10 +90,8 @@
                             <p>Long-term relationship<br>building</p>
                         </div>
                     </div>
-                    <div class="cta-button">
-                        <a type="button" href="#contact" value="contact" target="_blank" class="button">NGO? Please get in touch!</a>
-                    </div>
-                </div>
+                    <!-- <div class="cta-button"> -->
+                        <button onclick="window.location.href = '#contact'">NPO? Please get in touch!</button>
                 <div class="mission-bg"></div>
             </section>
 
@@ -130,14 +125,10 @@
                 <div id="call-to-action">
                     <div class="full-width">
                         <div class="half-width">
-                            <div class="cta-button">
-                                <a type="button" href="https://www.behance.net/christine_moore" value="behance" target="_blank" class="button">Visit my Behance portfolio</a>
-                            </div>
+                            <button onclick="window.location.href = 'https://www.behance.net/christine_moore;'">Visit my Behance portfolio</button>
                         </div>
                         <div class="half-width">
-                            <div class="cta-button">
-                                <a type="button" href="https://github.com/hellochristinemoore" value="github" target="_blank" class="button">Check me out on Github</a>
-                            </div>
+                            <button onclick="window.location.href = 'https://github.com/hellochristinemoore'">Check me on Github</button>
                         </div>
                     </div>
                 </div>
@@ -176,21 +167,20 @@
                 <div class="contact-bg"></div>
             </footer>
         </main>
-    </body>
-
-
+    
 <!--JS for sticky navigation-->
+    <script> 
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-<script> 
-    window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
     }
-}
-</script>
+    </script>
+    
+    </body>
